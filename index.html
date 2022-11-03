@@ -7,98 +7,115 @@
     <meta name="keywords" content="html, css, course, tags">
     <meta name="discripton" content="This is the CV website of Renat Khrashchevskyi">
     <title>Renat CV resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <img src="avatar.jpeg" alt="Avatar" width="150">
+<div class="container">
 
-    <h1>Renat Khrashchevskyi</h1>
-    <br>
-    <p> I am a student at <strong> Result School</strong>.</p>
+    <div class="info">
 
-    <p>I like <em> hiking</em>, snowboarding</em>, <em></em>cooking</em>.</p>
-    <br>
+        
+            <img class="avatar" src="avatar.jpeg" alt="Avatar">
+        <div class="info-text">
+            <h1>Renat Khrashchevskyi</h1>
+            <br>
+            <p> I am a student at <strong> Result School</strong>.</p>
 
-    <h2>List of social networks</h2>
+            <p>I like <em> hiking</em>, snowboarding</em>, <em></em>cooking</em>.</p>
+            <br>
 
-    <a href="https://www.instagram.com/rnt.kh/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/RenatKhrashchevskyi" target="_blank">Facebook</a>
+        <div class="card0">
+            <h2>List of social networks</h2>
 
-    <br>
+            <a href="https://www.instagram.com/rnt.kh/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/RenatKhrashchevskyi" target="_blank">Facebook</a>
+        </div>
+        </div>
+
+        
+    </div>
+        <br>
+        <br>
+        <hr>
+
+    <div class="card1">
+        <h2>My hobbies</h2>
+        <ol class="list">
+            <li>Snowboarding</li>
+            <li>Hiking</li>
+            <li>Traveling</li>
+            <li>Cooking</li>
+            <li>Coding</li>
+            <li>Karaoke</li>
+        </ol>
+    </div>
     <br>
     <hr>
 
-    <h2>My hobbies</h2>
+    <div class="card2">
+        <h2>Work experiences</h2>
 
-    <ul>
-        <li>Snowboarding</li>
-        <li>Hiking</li>
-        <li>Traveling</li>
-    </ul>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Year</th>
+                </tr>
+                </thead>
 
-    <ol>
-        <li>Cooking</li>
-        <li>Coding</li>
-        <li>Karaoke</li>
-    </ol>
+                <tbody>
+                <tr>
+                    <td>Denmark</td>
+                    <td>Farm worker</td>
+                    <td>2018-2019</td>
+                </tr>
 
-<br>
-<hr>
-    <h2>Work experiences</h2>
+                <tr>
+                    <td>Finland</td>
+                    <td>Farm worker</td>
+                    <td>2019-2020</td>
+                </tr>
 
-        <table>
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Year</th>
-            </tr>
-            </thead>
+                <tr>
+                    <td>Canada</td>
+                    <td>Farm worker</td>
+                    <td>2020-...</td>
+                </tr>
+                </tbody>
 
-            <tbody>
-            <tr>
-                 <td>Denmark</td>
-                 <td>Farm worker</td>
-                 <td>2018-2019</td>
-            </tr>
+            </table>
+    </div> 
+    <br>
+    <hr>
+    <div class="card3">
+       
 
-            <tr>
-                <td>Finland</td>
-                <td>Farm worker</td>
-                <td>2019-2020</td>
-            </tr>
+        <form class="form">
+            <h2>Contact me</h2>  
+            <div class="form-row"> 
+            <div class="form-group">
+                <label for="name">Your name:</label>
+                <input type="text" name="" id="name"placeholder="write your name">
+            </div>
+                
+            <div class="form-group">
+                <label for="email">Your email:</label>
+                <input type="email" name="" id="emmail"placeholder="write your email">
 
-            <tr>
-                <td>Canada</td>
-                <td>Farm worker</td>
-                <td>2020-...</td>
-            </tr>
-            </tbody>
+            </div>
+           </div> 
+            <div class="form-group">
+                    <label for="message">Write message:</label>
+                    <br>
+                    <textarea name="" id="message" cols="20" rows="5" placeholder="write here..."></textarea>   
+            </div>
 
-        </table>
-        
-      <h2>Contact me</h2>  
-
-      <form>
-        <div>
-            <label for="name">Your name:</label>
-            <input type="text" name="" id="name"placeholder="write your name">
-        </div>
-            
-        <div>
-            <label for="email">Your email:</label>
-            <input type="email" name="" id="emmail"placeholder="write your email">
-
-        </div>
-        <br>
-        <div>
-                <label for="message">Write message:</label>
-                <br>
-                <textarea name="" id="message" cols="20" rows="5" placeholder="write here..."></textarea>   
-        </div>
-
-        <!-- <button type="submit">Send!</button> -->
-        <input type="submit" value="Send!">
-        </form>
+            <!-- <button type="submit">Send!</button> -->
+            <input type="submit" value="Send!" class="btn">
+            </form>
+    </div>
+</div>
 </body>
 </html>
